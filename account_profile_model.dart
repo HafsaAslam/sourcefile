@@ -16,8 +16,9 @@ class JournalEntryModel {
   DateTime journalEntryDate;
   double journalEntryTotal;
   JournalEntryTypesEnum journalEntryType;
+  String additionalInfoDocId;
   List<LedgerEntryModel> ledgerEntries;
-
+  
   String attachFiles;
   String memo;
 
@@ -31,6 +32,7 @@ class JournalEntryModel {
       required this.journalEntryNumber,
       required this.journalEntryType,
       required this.journalEntryTotal,
+      required this.additionalInfoDocId,
       required this.ledgerEntries,
       required this.attachFiles,
       required this.memo,
